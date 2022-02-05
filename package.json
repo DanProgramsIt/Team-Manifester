@@ -1,0 +1,25 @@
+{
+  "name": "team-manifester",
+  "description": "OOP testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanProgramsIt/Team-Manifester.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanProgramsIt/Team-Manifester/issues"
+  },
+  "homepage": "https://github.com/DanProgramsIt/Team-Manifester#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.4.7"
+  }
+}
