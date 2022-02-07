@@ -19,15 +19,15 @@ Team-Manifester is an application which builds an html file displaying the membe
 
 ## Demonstration
 
-View a demonstration of the application: [](https://drive.google.com/file/d/1kX94Q7RXjA6mYBVssedRlcWgtXtDwi7D/view)
+View a demonstration of the application: [video](https://drive.google.com/file/d/1kX94Q7RXjA6mYBVssedRlcWgtXtDwi7D/view)
 
 
-![App-Questions](/img/questions.jpg)
+![App-Questions](/assets/img/questions.jpg)
 
 
 ### Example of generated html
 
-![Generated html](/img/finished%20product.png)
+![Generated html](/assets/img/finished%20product.png)
 
 
 
@@ -56,7 +56,7 @@ To run tests, run the following:
 npm test
 `
 
-![test-screenshot](/img/test%20pass.jpg)
+![test-screenshot](/assets/img/test%20pass.jpg)
 
 
 
