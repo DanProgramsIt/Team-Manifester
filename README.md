@@ -19,7 +19,7 @@ Team-Manifester is an application which builds an html file displaying the membe
 
 ## Demonstration
 
-View a demonstration of the application: [video](https://drive.google.com/file/d/1kX94Q7RXjA6mYBVssedRlcWgtXtDwi7D/view)
+View a demonstration of the application: [Demonstration-video](https://drive.google.com/file/d/1kX94Q7RXjA6mYBVssedRlcWgtXtDwi7D/view)
 
 
 ![App-Questions](/assets/img/questions.jpg)
