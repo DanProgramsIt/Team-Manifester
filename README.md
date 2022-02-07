@@ -22,12 +22,12 @@ Team-Manifester is an application which builds an html file displaying the membe
 View a demonstration of the application: [](https://drive.google.com/file/d/1kX94Q7RXjA6mYBVssedRlcWgtXtDwi7D/view)
 
 
-![App-Questions](/images/questions.png)
+![App-Questions](/img/questions.jpg)
 
 
 ### Example of generated html
 
-![Generated html](/images/finished product.png)
+![Generated html](/img/finished%20product.png)
 
 
 
@@ -56,7 +56,7 @@ To run tests, run the following:
 npm test
 `
 
-![test-screenshot](/images/test pass.png)
+![test-screenshot](/img/test%20pass.jpg)
 
 
 
