@@ -8,8 +8,8 @@ const questions = require("./lib/questions");
 const containers = require("./lib/containers");
 const render = require("./lib/htmlRenderer");
 
-const lib_DIR = path.resolve(__dirname, "lib");
-const libPath = path.join(lib_DIR, "myTeam.html");
+const dist_DIR = path.resolve(__dirname, "dist");
+const distPath = path.join(dist_DIR, "Team-Manifester.html");
 
 const employees = [];
 
@@ -17,12 +17,12 @@ const promptsUser = (type) => {
   return inquirer.prompt(questions[type]);
 };
 
-const writeLib = (pager) => {
-  if (!fs.existsSync(lib_DIR)) {
-    fs.mkdirSync(lib_DIR);
+const writeDist = (page) => {
+  if (!fs.existsSync(dist_DIR)) {
+    fs.mkdirSync(dist_DIR);
   }
-  fs.writeFileSync(libPath, page);
-  console.log("myTeam file has been generated in lib folder");
+  fs.writeFileSync(distPath, page);
+  console.log("Team-Manifester file has been generated in dist folder");
 };
 
 const askNext = () => {
@@ -52,20 +52,21 @@ const askNext = () => {
     } else {
       console.log(" Your Team is complete - rendering your team page");
       const htmlPage = render(employees);
-      writeLib(htmlPage);
+      writeDist(htmlPage);
     }
   });
 };
 
 const buildTeam = () => {
-    return promptsUser('manager').then((emp) => {
-        const newEmp = new Manager(emp.name, emp.id, emp.email, emp.officeNumber);
-        employees.push(newEmp);
-        containers.ids.push(emp.id);
-        askNext();
+  return promptsUser("manager")
+    .then((emp) => {
+      const newEmp = new Manager(emp.name, emp.id, emp.email, emp.officeNumber);
+      employees.push(newEmp);
+      containers.ids.push(emp.id);
+      askNext();
     })
     .catch((err) => {
-        console.log(err);
+      console.log(err);
     });
 };
 
