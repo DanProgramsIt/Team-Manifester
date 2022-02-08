@@ -13,10 +13,12 @@ const distPath = path.join(dist_DIR, "Team-Manifester.html");
 
 const employees = [];
 
+// prompts the user with questions & returns answers
 const promptsUser = (type) => {
   return inquirer.prompt(questions[type]);
 };
 
+// generates the html file into the dist folder
 const writeDist = (page) => {
   if (!fs.existsSync(dist_DIR)) {
     fs.mkdirSync(dist_DIR);
@@ -25,6 +27,7 @@ const writeDist = (page) => {
   console.log("Team-Manifester file has been generated in dist folder");
 };
 
+// asks the user what employee to add & creates that object
 const askNext = () => {
   return promptsUser("nextEmp").then((answer) => {
     if (answer.role === "Engineer") {
@@ -57,6 +60,7 @@ const askNext = () => {
   });
 };
 
+// builds the team by asking for the managers info & creates the object
 const buildTeam = () => {
   return promptsUser("manager")
     .then((emp) => {
